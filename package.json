@@ -1,0 +1,17 @@
+{
+  "name": "barberpro-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema completo para barbearias com WhatsApp IA",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm --filter \"./apps/*\" build",
+    "test": "pnpm --filter \"./apps/*\" test",
+    "lint": "pnpm --filter \"./apps/*\" lint",
+    "clean": "pnpm --parallel --filter \"./apps/*\" clean"
+  }
+}
